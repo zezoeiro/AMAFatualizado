@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background-verde">
+        <!-- Começo cabeçalho -->
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="#"><img src="logoAMAF.enc" alt="logo do AMAF" class="amaf"></a>
+                    </div>
+                    <ul class="ul">
+                        <li>
+                            <a href="https://www.instagram.com/amaf_df/" target="_blank" class="social-icon">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@AMAF_DF" target="_blank" class="social-icon">
+                                <i class="fab fa-youtube"></i> YouTube
+                            </a>
+                        </li>
+                        <li><a href="princ.css"><button class="btn-gradient">Mais</button></a></li>
+                    </ul>
+                    <div class="menu-icon">
+                        <img src="menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="icon menu">
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Fim cabeçalho -->
+        
+        <!-- Começo Main -->
+        <main>
+            <div class="container">
+                <div class="main-txt">
+                    <h1>Aplicativo de Mapeamento de Árvores Frutíferas</h1>
+                    <div class="sub-txt">
+                        <h2>Modern, New, Basic</h2>
+                    </div>
+                    <div>
+                        <button class="btn-gradient">Ver Mais</button>
+                        <img src="check_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Verificado">
+                    </div>
+                </div>
+                <div class="main-img">
+                    <img src="amafinsta.jfif" alt="Impactante">
+                </div>
+            </div>
+        </main>
+        <!-- Fim Main -->
+    </div>
+    <!-- começo da parte explicações-->
+    <section class="resultados">
+        <div class="container">
+            <div class="resultados-txt">
+                Conheça mais sobre nosso aplicativo:
+            </div>
+        </div>
+    </section>
+    <!-- fim da parte explicações -->
+    
+    <!-- início da seção diff -->
+    <section class="diff">
+        <div class="container">
+            <div class="card">
+                <img src="settings_accessibility_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="configurações">
+                <h3 class="titulo">Desenvolvido por Adolescentes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero earum sunt expedita. Ve</p>
+            </div>
+            <div class="card">
+                <img src="install_mobile_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="configurações">
+                <h3 class="titulo">Aplicativo totalmente funcional</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero earum sunt expedita. Ve</p>
+            </div>
+            <div class="card">
+                <img src="bolt_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="instalar mobile">
+                <h3 class="titulo">Sistema de Bolts</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero earum sunt expedita. Ve</p>
+            </div>
+        </div>
+    </section>
+    <!-- fim da seção diff -->
+
+    <!-- início da seção exp -->
+    <section class="exp">
+        <div class="container">
+            <div class="exp-img">
+                <img src="CMS.jfif" alt="como surgiu o amaf">
+            </div>
+            <div class="exp-txt">
+                <h2 class="txt-gradient">Como surgiu?</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Illo tempora pariatur ratione accusantium in, magni suscipit
+                     , sed officiis explicabo cum, aliquid iste atque quae deleniti
+                      repudiandae! Similique odio ut tempore.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Illo tempora pariatur ratione accusantium in, magni suscipit
+                      , sed officiis explicabo cum, aliquid iste atque quae deleniti
+                       repudiandae! Similique odio ut tempore</p>
+            </div>
+        </div>
+    </section>
+    <section class="exp2">
+        <div class="container2">
+            <div class="exp-img2">
+                <img src="CMS.jfif" alt="como surgiu o amaf">
+            </div>
+            <div class="exp-txt2">
+                <h2 class="txt-gradient2">Como surgiu?</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Illo tempora pariatur ratione accusantium in, magni suscipit
+                     , sed officiis explicabo cum, aliquid iste atque quae deleniti
+                      repudiandae! Similique odio ut tempore.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Illo tempora pariatur ratione accusantium in, magni suscipit
+                      , sed officiis explicabo cum, aliquid iste atque quae deleniti
+                       repudiandae! Similique odio ut tempore</p>
+            </div>
+           
+        </div>
+    </section>
+    <!-- fim da seção exp -->
+</body>
+<script>
+    var menuIcon = document.querySelector(".menu-icon");
+    var ul = document.querySelector(".ul");
+
+    menuIcon.addEventListener("click", () => {
+        if (ul.classList.contains("ativo")) {
+            ul.classList.remove("ativo");
+            document.querySelector(".menu-icon img").src = "menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+        } else {
+            ul.classList.add("ativo");
+            document.querySelector(".menu-icon img").src = "close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+        }
+    });
+
+    // Garantir que os elementos com as classes correspondentes existam
+    var subTxt = document.querySelector(".sub-txt");
+    var mainTxt = document.querySelector(".main-txt");
+    var resultadoTxT = document.querySelector(".resultados-txt");
+
+    if (subTxt) {
+        if (subTxt.classList.contains("ativo")) {
+            subTxt.classList.remove("ativo");
+        } else {
+            subTxt.classList.add("ativo");
+        }
+    }
+
+    if (mainTxt) {
+        if (mainTxt.classList.contains("esconder")) {
+            mainTxt.classList.remove("esconder");
+        } else {
+            mainTxt.classList.add("esconder");
+        }
+    }
+
+    if (resultadoTxT) {
+        if (resultadoTxT.classList.contains("esconder")) {
+            resultadoTxT.classList.remove("esconder");
+        } else {
+            resultadoTxT.classList.add("esconder");
+        }
+    }
+</script>
+</html>
